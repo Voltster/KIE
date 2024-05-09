@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: .75rem;
+}
+
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(172, 226, 255, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(53, 110, 255);
+  outline: 1px solid rgb(19, 137, 255);
+}
+
+
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  h1 {
+    @apply text-gray-950 text-[5vh] sm:text-[5vw]  md:text-[4vw] font-bold;
+  }
+
+  h2 {
+    @apply text-gray-900 text-[2vh]  md:text-[3vw] font-bold;
+  }
+  h3 {
+    @apply text-gray-800 text-[2vh]  md:text-[2vw] font-bold;
+  }
+
+  h4 {
+    @apply text-gray-800 text-[1.5vh]  md:text-[1.5vw] font-bold;
+  }
+  h5 {
+    @apply font-semibold;
+  }
+
+  p {
+    @apply text-gray-900 text-[2vh] md:text-[2vw]  lg:text-[1vw] ;
+  }
+
+  .btn {
+    @apply text-gray-50 relative leading-[1.4] z-10 hover:text-gray-900 overflow-hidden rounded-full border-2 border-gray-50 py-4 px-8;
+  }
+
+  .btn-primary {
+    @apply py-2 px-5 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+/* .example {
+  font-size: 3em;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+} */

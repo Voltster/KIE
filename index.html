@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx">
+    window.scroll({
+      top: 2500,
+      left: 0,
+      behavior: 'smooth'
+    });
+
+    // Scroll certain amounts from current position 
+    window.scrollBy({
+      top: 100, // could be negative value
+      left: 0,
+      behavior: 'smooth'
+    });
+
+    // Scroll to a certain element
+    document.querySelector('.hello').scrollIntoView({
+      behavior: 'smooth'
+    });
+  </script>
+</body>
+
+</html>
