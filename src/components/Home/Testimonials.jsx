@@ -86,20 +86,29 @@ const Testimonials = () => {
         Get to Know Our Digital Print Services Closer <br />
         Through <span className="text-green-500">Customer Reviews</span>
       </h2>
-      <div >
+      <div className="h-full w-full">
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          centeredSlides={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              centeredSlides: true,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              centeredSlides: false,
+            },
+          }}
           pagination={{
             clickable: true,
           }}
           modules={[Pagination]}
           className="mySwiper bg-white w-full"
         >
-          {testimonialsData.map((testimonial,i) => (
+          {testimonialsData.map((testimonial, i) => (
             <SwiperSlide key={i}>
-              <TestimonialsCard quote={testimonial.quote}  image={testimonial.image} />
+              <TestimonialsCard quote={testimonial.quote} image={testimonial.image} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -107,5 +116,6 @@ const Testimonials = () => {
     </div>
   );
 };
+
 
 export default Testimonials;

@@ -6,10 +6,10 @@ const TestimonialsCard = ({ quote, author, image }) => {
     <div className="flex flex-col justify-center items-center">
 
       {image && (
-        <img src={image} alt={author} className=" md:max-w-[8rem] object-contain  mb-4 mix-blend-multiply" />
+        <img src={image} alt={author} className="max-w-[4rem] md:max-w-[8rem] object-contain  mb-4 mix-blend-multiply" />
       )}
       <div className="flex-grow">
-        <p className="text-gray-700 md:text-lg leading-relaxed max-w-[80% ">{quote}</p>
+        <p className="text-gray-700 text-sm md:text-lg leading-relaxed max-w-[80% ">{quote}</p>
        
       </div>
     </div>

@@ -84,11 +84,11 @@ body {
     @apply text-gray-900 text-[2vh]  md:text-[3vw] font-bold;
   }
   h3 {
-    @apply text-gray-800 text-[2vh]  md:text-[2vw] font-bold;
+    @apply text-gray-800 text-[4vh]  md:text-[2vw] font-bold;
   }
 
   h4 {
-    @apply text-gray-800 text-[1.5vh]  md:text-[1.5vw] font-bold;
+    @apply text-gray-800 text-[2.5vh]  md:text-[1.5vw] font-bold;
   }
   h5 {
     @apply font-semibold;

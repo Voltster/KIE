@@ -80,7 +80,7 @@ const Footer = () => {
             <button className="btn mt-4 ">
               <Link
                 to="mailto:konceptindia.enterprises@gmail.com"
-                className="flex items-center gap-3 text-[1vw]"
+                className="flex items-center gap-3 md:text-[1vw]"
               >
                 Get in touch <FaArrowRight />
               </Link>

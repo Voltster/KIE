@@ -4,14 +4,9 @@
   padding: 0;
 } */
 
-
-
-
 /* .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 } */
-
-
 
 /* @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -27,10 +22,9 @@
   color: #888;
 } */
 
-
 /* My CSS */
 
-.bgHome{
+.bgHome {
   background: url("./assets/bg.jpg");
   background-position: center;
   background-size: cover;
@@ -39,13 +33,10 @@
 
 .bentoBg {
   background-image: url("https://img.freepik.com/free-vector/colorful-mandala-stationery_23-2147510258.jpg?t=st=1713505408~exp=1713509008~hmac=6ad83325a420ad0ada664ba82362cd4d3cd9a2ab4dfbec59c6953951677015ad&w=826");
-  background-repeat: no-repeat; 
-  background-position: center; 
-  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-
-
 
 .swiper {
   width: 100%;
@@ -68,8 +59,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-
 
 /* .nav-link li a {
   color: #0b0500;
@@ -95,20 +84,23 @@
   transition: all ease 0.3s;
   z-index: -10;
 }
-.btn:hover::after{
+.btn:hover::after {
   bottom: 0;
   border-radius: 0%;
 }
 
 .box {
-  --mask:
-    radial-gradient(34.99px at 50% calc(100% - 48px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
-    radial-gradient(34.99px at 50% calc(100% + 18px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  --mask: radial-gradient(
+        34.99px at 50% calc(100% - 48px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(34.99px at 50% calc(100% + 18px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px 100% repeat-x;
   -webkit-mask: var(--mask);
-          mask: var(--mask);
+  mask: var(--mask);
 }
-
-
 
 /* .mask  {
   -webkit-mask-image:url(/wp-content/uploads/2020/10/blob.svg);
@@ -122,7 +114,6 @@
   mask-size:cover;
 } */
 
-
 .curve {
   position: absolute;
   height: 250px;
@@ -132,7 +123,7 @@
 }
 
 .curve::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   border-radius: 100% 50%;
@@ -143,7 +134,7 @@
 }
 
 .curve::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   border-radius: 100% 50%;
@@ -153,7 +144,6 @@
   transform: translate(-4%, 40%);
   z-index: -1;
 }
-
 
 .gallery-container {
   padding: 2rem;
@@ -213,8 +203,6 @@
   display: block;
 }
 
-
-
 /* style card */
 .wallet {
   --bg-color: #386aff;
@@ -222,23 +210,6 @@
   --text-color-hover: #fff;
   --box-shadow-color: rgba(109, 116, 253, 0.48);
 }
-
-.card {
-  /* width: 220px; */
-  /* height: 321px; */
-  background: #fff;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease-out;
-  text-decoration: none;
-}
-
 .card:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
@@ -247,6 +218,7 @@
 
 .card:hover .overlay {
   transform: scale(8) translateZ(0);
+  background-color: #386aff;
 }
 
 .card:hover .circle {
@@ -258,7 +230,8 @@
   background: var(--bg-color-light);
 }
 
-.card:hover p {
+.card:hover p,
+.card:hover h3 {
   color: var(--text-color-hover);
 }
 
@@ -268,30 +241,13 @@
   transition: color 0.3s ease-out;
 }
 
-.circle {
-  width: 131px;
-  height: 131px;
-  border-radius: 50%;
-  background: #fff;
-  border: 2px solid var(--bg-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-out;
-}
-
 .circle:after {
   content: "";
   width: 118px;
   height: 118px;
   display: block;
-  position: absolute;
   background: var(--bg-color);
   border-radius: 50%;
-  top: 7px;
-  left: 7px;
   transition: opacity 0.3s ease-out;
 }
 
@@ -302,12 +258,11 @@
 
 .overlay {
   width: 118px;
-  position: absolute;
   height: 118px;
+  position: absolute;
   border-radius: 50%;
-  background: var(--bg-color);
-  top: 0px;
-  left: 40%;
+  background: #e6f4ff;
+  top: 5%;
   z-index: 0;
   transition: transform 0.3s ease-out;
 }
