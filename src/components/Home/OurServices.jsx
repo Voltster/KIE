@@ -1,19 +1,18 @@
 import React from "react";
 import BasicService from "../Home/BasicService";
+import PrimaryButton from "../common/PrimaryButton ";
 
 const OurServices = () => {
   return (
     <div className="bg-gradient-to-tr from-blue-950 to-blue-800 py-[5vw]">
-      <div className="flex justify-around items-center w-11/12 mx-auto ">
-        <h2 className="md:w-7/12 mt-8 text-white">
+      <div className="md:flex justify-around items-center w-11/12 mx-auto ">
+        <h2 className="md:w-7/12 mt-8 text-white text-4xl font-light md:text-[3vw] md:font-bold">
           Easy and Fast Print Customization with Digital Print Services
         </h2>
         <div>
-          <button className="btn-primary bg-blue-500 hover:bg-blue-600">
-            Learn More
-          </button>
+          <PrimaryButton to={"/service"}>Learn More</PrimaryButton>
         </div>
-      </div>
+      </div>  
       <BasicService />
     </div>
   );

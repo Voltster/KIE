@@ -82,7 +82,7 @@ const Testimonials = () => {
   return (
     <div className="w-full mx-auto py-24 mt-8 bg-white">
       <h3 className="text-center no-underline">Testimonials</h3>
-      <h2 className="w-4/6 mx-auto md:w-full text-center my-8">
+      <h2 className="w-5/6 mx-auto md:w-full text-center my-8 ">
         Get to Know Our Digital Print Services Closer <br />
         Through <span className="text-green-500">Customer Reviews</span>
       </h2>

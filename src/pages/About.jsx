@@ -40,7 +40,7 @@ const About = () => {
       <div className=" flex flex-col-reverse md:flex-row justify-center items-center w-11/12 mx-auto gap-20">
         {/* left */}
         <div className="md:w-6/12 ">
-          <h3 className="no-underline font-extralight">Who we are</h3>
+          <h3 className="no-underline font-extralight ">Who we are</h3>
           <h2>
             Welcome To <span className="text-green-500">Koncept India</span>,
             Helping You Find the best digital printing solutions.
@@ -67,13 +67,13 @@ const About = () => {
       </div>
       <OurClients />
       <div className="w-10/12 mx-auto">
-        <h2 className="text-center my-8">Creative Production Team</h2>
-        <div className="flex flex-col md:flex-row items-center justify-between ">
+        <h2 className="text-center my-8 text-3xl font-semibold md:font-bold  md:text-[3vw]">Creative Production Team</h2>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4 ">
           {Teams.map((e, i) => (
-            <div key={i} className="relative cursor-pointer w-8/12 md:w-4/12 border-2  overflow-hidden group  transition-all duration-150 ease-in">
+            <div key={i} className="relative cursor-pointer    overflow-hidden group  transition-all duration-150 ease-in rounded-br-3xl rounded-tl-3xl">
               <img src={e.img} alt=""  className="rounded-md object-cover group-hover:scale-[1.05] transition-all "/>
-              <span className="text-center absolute bottom-0 bg-black/10 w-full py-10  rounded-t-3xl opacity-0 group-hover:opacity-100  transition-opacity">
-                <h3 className="mx-auto text-gray-50 no-underline ">{e.heading}</h3>
+              <span className="text-center absolute bottom-0 bg-black/80 md:bg-black/50 w-full py-4 md:py-10  rounded-t-3xl md:opacity-0 group-hover:opacity-100  transition-opacity">
+                <h3 className="mx-auto text-gray-50 no-underline text-2xl font-light md:text-[1.5vw]  md:font-semibold">{e.heading}</h3>
                 <p>{e.description}</p>
               </span>
             </div>
