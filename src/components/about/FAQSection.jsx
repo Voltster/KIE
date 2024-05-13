@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import { IoIosArrowDown , IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import SpecialOffer from "../services/SpecialOffer";
 
 const FAQSection = () => {
@@ -13,7 +13,8 @@ const FAQSection = () => {
   const faqs = [
     {
       id: 1,
-      question: "1. What printing services does Koncept India Enterprises offer?",
+      question:
+        "1. What printing services does Koncept India Enterprises offer?",
       answer:
         " At Koncept India Enterprises, we provide a comprehensive range of printing services to meet all your needs. Our offerings include offset printing, digital printing, screen printing, leaf printing, and UV printing. With our state-of-the-art technology and skilled professionals, we ensure exceptional quality and precision in every print job.",
     },
@@ -23,10 +24,11 @@ const FAQSection = () => {
       answer:
         "Yes, absolutely! Koncept India Enterprises has an in-house graphics designing unit equipped with the latest software and talented designers. From concept creation to final artwork, our team can assist you with stunning designs for brochures, catalogs, packaging, and more. We collaborate closely with you to understand your vision and bring it to life with creative and impactful designs.",
     },
-  
+
     {
       id: 3,
-      question: "3. What types of products can I create using digital printing?",
+      question:
+        "3. What types of products can I create using digital printing?",
       answer:
         "Digital printing technology opens up a world of possibilities for creating a wide range of products. At Koncept India Enterprises, we use digital printing to produce high-quality marketing materials, brochures, catalogs, flyers, personalized stationery, labels, packaging, and more. With digital printing, you can enjoy vibrant colors, crisp details, and the flexibility to print variable data and personalized content.",
     },
@@ -38,50 +40,53 @@ const FAQSection = () => {
     },
     {
       id: 5,
-      question: "5. What unique products can I create using digital printing techniques?",
+      question:
+        "5. What unique products can I create using digital printing techniques?",
       answer:
         "Digital printing allows for endless creativity and personalization. At Koncept India Enterprises, we can help you create unique and eye-catching products using our digital printing capabilities. From custom-printed apparel and merchandise to personalized gifts and promotional items, the possibilities are limitless. Explore options like printed phone cases, mugs, canvas prints, and more to make your brand or message stand out.",
     },
     {
-        id: 6,
-        question: "6.   What are the typical turnaround times for print jobs?",
-        answer:
-          "At Koncept India Enterprises, we understand the importance of meeting deadlines. Our turnaround times vary depending on the complexity and scope of the project. For standard orders, we generally have a turnaround time of 3-5 business days. However, we also offer rush services for urgent print requirements. Our team works efficiently to ensure timely delivery without compromising on quality.",
-      },
+      id: 6,
+      question: "6.   What are the typical turnaround times for print jobs?",
+      answer:
+        "At Koncept India Enterprises, we understand the importance of meeting deadlines. Our turnaround times vary depending on the complexity and scope of the project. For standard orders, we generally have a turnaround time of 3-5 business days. However, we also offer rush services for urgent print requirements. Our team works efficiently to ensure timely delivery without compromising on quality.",
+    },
   ];
 
   return (
     <div className="pt-[6vw] mt-[3vh]">
-      <h2 className="text-center">Frequently Asked Questions</h2>
-      <div className="w-11/12 mx-auto md:grid md:grid-cols-2 ">
-       
-          {faqs.map((faq, index) => (
-            <Fade key={faq.id} triggerOnce>
-              <div
-                className={`p-8 rounded-lg  m-2 cursor-pointer ${
-                  activeFAQ === index ? "active" : ""
-                }`}
-                onClick={() => toggleFAQ(index)}
-              >
-                <div className="flex justify-between  px-8">
-                  <h4 className="no-underline font-normal">{faq.question}</h4>
-                  <span className="text-gray-700 font-bold text-3xl">
-                    {activeFAQ === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                  </span>
-                </div>
-                <div
-                  className={`faq-answer mx-8 w-[90%] max-h-0 overflow-hidden hidden ${
-                    activeFAQ === index ? "show" : ""
-                  }`}
-                >
-                  <p className="text-[1.3vh] md:text-[1vw] mt-2">{faq.answer}</p>
-                </div>
+      <h2 className="text-center mt-20 md:mt-0">FAQ</h2>
+      <div className="md:w-11/12 mx-auto md:grid  md:grid-cols-2 ">
+        {faqs.map((faq, index) => (
+          <Fade key={faq.id} triggerOnce>
+            <div
+              className={`md:p-8 rounded-lg my-8 cursor-pointer ${
+                activeFAQ === index ? "active" : ""
+              }`}
+              onClick={() => toggleFAQ(index)}
+            >
+              <div className="flex justify-between  px-8">
+                <h4 className=" font-semibold md:font-normal md:text-3xl text-lg ">
+                  {faq.question}
+                </h4>
+                <span className="text-gray-700 font-bold text-3xl">
+                  {activeFAQ === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                </span>
               </div>
-            </Fade>
-          ))}
-      
+              <div
+                className={`faq-answer mx-8 w-[90%] max-h-0 overflow-hidden hidden ${
+                  activeFAQ === index ? "show" : ""
+                }`}
+              >
+                <p className="text-[2vh] md:text-[1vw] mt-2">{faq.answer}</p>
+              </div>
+            </div>
+          </Fade>
+        ))}
       </div>
-      <SpecialOffer/>
+      <div className="hidden md:block">
+        <SpecialOffer />
+      </div>
     </div>
   );
 };

@@ -62,7 +62,7 @@ const items = [
 
 const GridGallery = () => {
   return (
-    <div className="w-10/12 mx-auto grid grid-cols-auto gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+    <div className=" md:w-10/12 mx-auto grid grid-cols-auto gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
       {items.map((item) => (
         <div
           key={item.id}

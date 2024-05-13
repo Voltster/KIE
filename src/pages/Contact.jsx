@@ -12,19 +12,19 @@ const Contact = () => {
   return (
     <div className="relative z-50 bg-inherit ">
       <SectionHeader
-        heading={"Get in Touch with Koncept India Enterprises"}
+        heading={"Get in Touch with KIE"}
         text={
-          "At Koncept India Enterprises, we value open communication and strive to provide exceptional customer service. Whether you have a specific project in mind or need guidance on the best printing solution for your needs, our team is here to assist you."
+          "At Koncept India Enterprises, we value open communication and strive to provide exceptional customer service. "
         }
       />
-      <div className="w-11/12 mx-auto flex flex-row ">
-        <div className="w-1/2">
+      <div className="w-11/12 mx-auto flex flex-col md:flex-row ">
+        <div className="md:w-1/2">
           <h2>Need More Help?</h2>
           <p>
             Connect with us on social media for updates, promotions, and
             inspiring design examples:
           </p>
-          <ul className=" border-gray-600 text-black py-4 text-[1vw]">
+          <ul className=" border-gray-600 text-black py-4 text-[2vh] md:text-[1vw] inline-block">
             <li>
               <Link
                 to="tel:+ 12345 67890"
@@ -54,7 +54,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <ContactForm />
         </div>
       </div>
