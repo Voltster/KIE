@@ -50,7 +50,7 @@ const ContactForm = () => {
         <button className="btn border-blue-50  bg-blue-500 after:bg-blue-600 hover:text-white" type="submit">
           <Link
             to="mailto:konceptindia.enterprises@gmail.com"
-            className="flex items-center gap-3 text-[1vw]"
+            className="flex items-center gap-3 text-[1vh] md:text-[1vw]"
           >
             Send Message <FaArrowRight />
           </Link>

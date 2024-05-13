@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Outlet />
         <Footer />
-        <Link  to="https://api.whatsapp.com/send?phone=8860331991" target='_blank' className="bottom-8 right-4 sm:right-8  md:right-16 fixed z-50 cursor-pointer  transition-all duration-400 ease-in-out animate-bounce ">
+        <Link  to="https://api.whatsapp.com/send?phone=918860331991" target='_blank' className="bottom-8 right-4 sm:right-8  md:right-16 fixed z-50 cursor-pointer  transition-all duration-400 ease-in-out animate-bounce ">
           <img src={whatsappIcon} alt="contact on whatsapp" className="w-[8vh] md:w-[4vw]" />
         </Link>
       </div>

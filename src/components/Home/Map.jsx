@@ -6,10 +6,10 @@ const Map = () => {
   return (
     <div className="w-full py-20">
       <h3 className="text-center no-underline mt-5 mb-10">Map</h3>
-      <div className="w-11/12 mx-auto">
+      <div className=" md:w-11/12 mx-auto">
         <iframe
           src={mapUrl}
-          className="w-full h-[30vw] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-md"
+          className="w-full h-[50vw] md:h-[30vw]  rounded-md "
           style={{ border: 0 }}
           allowfullscreen=""
           loading="lazy"
