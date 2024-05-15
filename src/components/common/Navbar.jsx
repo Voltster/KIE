@@ -23,7 +23,7 @@ const Navbar = () => {
                 alt="Koncept India Enterprises  mix-blend-multiply"
                 width={35}
               />
-              <h1 className="text-black font-bold text-lg ">
+              <h1 className="bg-gradient-to-l from-blue-500 to-blue-800 bg-clip-text text-transparent font-bold text-sm ">
                 Koncept India Enterprises
               </h1>
             </Link>

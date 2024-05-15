@@ -6,109 +6,109 @@ export function LayoutGridDemo() {
     {
       id: 1,
       content: <PrintingServices />,
-      className: "md:col-span-2",
+      className: "md:col-span-2 md:row-span-3",
       thumbnail:
         "https://img.freepik.com/free-photo/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai_188544-15381.jpg?t=st=1714373198~exp=1714376798~hmac=4ab9ec70102735c83fc95ae1d9ac14903fed2ee5a7c440d26f0eef4f6ce7c77b&w=1380",
     },
     {
       id: 2,
       content: <LeafletsFlyers />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-2",
       thumbnail:
         "https://img.freepik.com/free-vector/gradient-core-values-flyers-pack_23-2149081664.jpg?t=st=1714373270~exp=1714376870~hmac=bc290f6febd99cea07c72882b49d3c290eac19708a39c93419f5b42b53fe6406&w=1380",
     },
     {
       id: 3,
       content: <CorporateStationery />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-3",
       thumbnail:
         "https://img.freepik.com/free-vector/red-professional-business-branding-stationery-set_1017-15303.jpg?t=st=1714373297~exp=1714376897~hmac=46752658b8536cd77611c7ffbc8710a2514b64b373f6355db9262a35da0cec98&w=1060",
     },
     {
       id: 4,
       content: <CoffeeTableBooks />,
-      className: "md:col-span-2",
+      className: "md:col-span-1  md:row-span-3",
       thumbnail:
         "https://img.freepik.com/free-photo/top-view-picture-frame-coffee-cup-eyeglasses-pen-notebook-textured-background_23-2147909934.jpg?t=st=1714373439~exp=1714377039~hmac=447bd04e6726fa4f11e62c7645d76ec3c9158d668b2e89a5a32bfa5d5dd9426d&w=1380",
     },
     {
       id: 5,
       content: <WeddingInvitations />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-3",
       thumbnail:
         "https://img.freepik.com/free-photo/wedding-invitation-flowers-arrangement_23-2150279546.jpg?t=st=1714373492~exp=1714377092~hmac=7f1327b6379d43462dd2eadafb62d7475feb993270d55e67590a5e921bf22474&w=740",
     },
     {
       id: 6,
       content: <PackagingBoxes />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-2",
       thumbnail:
         "https://img.freepik.com/premium-psd/view-cardboard-packaging-box-mock-up_23-2150097200.jpg?w=740",
     },
     {
       id: 7,
       content: <CorporateGifts />,
-      className: "md:col-span-1",
+      className: "md:col-span-1  md:row-span-3",
       thumbnail:
         "https://img.freepik.com/premium-psd/school-backpack-clothing-mockup_23-2151223399.jpg?w=826",
     },
     {
       id: 8,
       content: <PersonalizedStationery />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-3",
       thumbnail:
         "https://img.freepik.com/free-psd/business-stationery-mock-up_1389-69.jpg?t=st=1714373625~exp=1714377225~hmac=24796bb3c2303d3523ec92dd67bd9d2344e27d2a5cc813a6876e2d36adaba71a&w=1380",
     },
     {
       id: 9,
       content: <LaptopBags />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-3",
       thumbnail:
         "https://img.freepik.com/premium-photo/black-rolling-backpack-bag-isolated-white-background-with-copy-space-advertisement_847439-95464.jpg?w=1380",
     },
     {
       id: 10,
       content: <GymBags />,
-      className: "md:col-span-1",
+      className: "md:col-span-1  md:row-span-3",
       thumbnail:
         "https://img.freepik.com/free-psd/bag-mockup-merchandising_15879-592.jpg?t=st=1714373701~exp=1714377301~hmac=88811305d1e86198110dc4497704ccff6ccedb35a63d2dff05f5175cf09473ca&w=1060",
     },
     {
       id: 11,
       content: <CurryBags />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-3",
       thumbnail: "https://cdn.shopify.com/s/files/1/0558/6413/1764/files/25_8d975002-1285-4f97-b471-78a248c202df.jpg?v=1624432096",
     },
    
     {
       id: 12,
       content: <NotepadsDiaries />,
-      className: "md:col-span-1",
+      className: "md:col-span-1  md:row-span-4",
       thumbnail: "https://goodmockups.com/wp-content/uploads/2023/11/6-Free-Luxury-Personal-Diary-Journal-Mockup-PSD-Files-7.jpg",
     },
     {
       id: 13,
       content: <CorporateGifts />,
-      className: "col-span-1",
+      className: "col-span-1 row-span-1  md:row-span-4",
       thumbnail: "https://img.freepik.com/free-photo/credit-card-shopping-bags_23-2147949877.jpg?t=st=1714379495~exp=1714383095~hmac=bb00f13cdef9162b17f8dd97c50fa6c4e0444c96162dfcb2f7ddf1b17efac163&w=1380",
     },
     {
       id: 14,
       content: <PassportHolders />,
-      className: "col-span-1",
+      className: "col-span-1  md:row-span-3",
       thumbnail: "https://img.freepik.com/premium-psd/passport-holders-mockup_1332-3582.jpg?w=1380",
     },
     {
       id: 15,
       content: <CataloguesBookletsBrochures />,
-      className: "md:col-span-4",
+      className: "md:col-span-1  md:row-span-3",
       thumbnail:
         "https://yi-files.yellowimages.com/products/1220000/1220162/2027876-full.jpg",
     },
   ];
 
   return (
-    <div className="h-screen py-20 w-full">
+    <div className="h-screen py-10 w-full">
       <LayoutGrid cards={cards} />
     </div>
   );

@@ -17,14 +17,14 @@ const LayoutGrid = ({ cards }) => {
   };
 
   return (
-    <div className="w-full h-screen p-10 grid grid-cols-3 md:grid-cols-4  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-screen p-2 grid grid-cols-3 md:grid-cols-4  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
               card.className,
-              "relative overflow-hidden",
+              "relative overflow-hidden cursor-pointer shadow-md   hover:shadow-2xl border-blue-500",
               selected?.id === card.id
                 ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
@@ -77,7 +77,7 @@ const SelectedCard = ({ selected }) => {
         animate={{
           opacity: 0.8,
         }}
-        className="absolute inset-0 h-full w-full bg-gradient-to-t from-slate-950 via-gray-50/0 to-blue-50/0  z-20"
+        className="absolute inset-0 h-full w-full bg-gradient-to-t  md:bg-gradient-to-t from-slate-950 md:via-gray-50/0  to-blue-500/0  z-20"
       />
       <motion.div
         initial={{
