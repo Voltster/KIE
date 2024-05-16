@@ -16,6 +16,7 @@ const TeamCard = ({
   return (
     <div
       className={`w-11/12 mx-auto block md:flex flex-row gap-20 ${isReversed ? 'flex-row-reverse' : customClass}`}
+      data-aos="zoom-in-down"
     >
       {/* Left Section */}
       <div className={`w-full  md:w-[50%] md:flex flex-row items-start justify-center overflow-hidden rounded-md md:rounded-none ${customClass}`}>

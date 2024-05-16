@@ -149,6 +149,7 @@ const cardComponents = cardsData.map((card) => {
     <div
       key={card.id}
       className={`p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-100 cursor-pointer`}
+      data-aos="zoom-in"
     >
       <span
         className={`p-5  rounded-full  text-white shadow-lg shadow-[${card.bgColor}] `}

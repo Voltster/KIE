@@ -13,6 +13,17 @@ const ServiceCard = ({ service }) => {
           ? "md:flex-row-reverse"
           : "flex-row"
       }`}
+      data-aos={
+        service.id === 2 ||
+        service.id === 4 ||
+        service.id === 6 ||
+        service.id === 8 ||
+        service.id === 10
+          ? "zoom-in-up"
+          : "zoom-in-down"
+      }
+      data-aos-delay="50"
+      data-aos-duration="1000"
     >
       <div className="w-full md:w-6/12 md:h-48 lg:h-[40vh]">
         <img

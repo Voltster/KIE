@@ -3,10 +3,11 @@ import SectionHeader from "../components/common/SectionHeader";
 
 import ContactForm from "../components/common/ContactForm";
 import Map from "../components/Home/Map";
-import { FaArrowRight, FaPhoneFlip } from "react-icons/fa6";
+import {  FaPhoneFlip } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
+// import Globe from "../components/common/GlobeDemo"
 
 const Contact = () => {
   return (
@@ -18,7 +19,7 @@ const Contact = () => {
         }
       />
       <div className="w-11/12 mx-auto flex flex-col md:flex-row ">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2"  data-aos="fade-right">
           <h2>Need More Help?</h2>
           <p>
             Connect with us on social media for updates, promotions, and
@@ -53,8 +54,9 @@ const Contact = () => {
               </Link>
             </li>
           </ul>
+          {/* <Globe/> */}
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2"  data-aos="fade-right">
           <ContactForm />
         </div>
       </div>

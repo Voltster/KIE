@@ -20,7 +20,17 @@ const Home = () => {
     <>
       <div className=" w-[100vw] h-[90vh] md:h-[100vh] relative bgHome flex flex-col md:flex-row  justify-center items-center space-x-4 z-30">
         {/* Left div */}
-        <div className="w-11/12 md:w-4/12">
+        <div
+          className="w-11/12 md:w-4/12"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <h1 className="bg-gradient-to-l from-blue-500 to-blue-800 bg-clip-text text-transparent">
             Precision, Innovation, and Excellence in Every Print
           </h1>
@@ -38,7 +48,6 @@ const Home = () => {
               <FaArrowRight />
             </Link>
           </button>
-   
         </div>
         {/* Right div */}
         <div className="w-5/12 hidden md:block">
@@ -46,6 +55,14 @@ const Home = () => {
             src={heroImg}
             alt="Every Print"
             className="absolute rounded-md right-[10%] top-[25%]  w-[30vw] h-[85vh]"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
           />
         </div>
       </div>

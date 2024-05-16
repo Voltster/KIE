@@ -55,17 +55,20 @@ const ServiceDetails = () => {
             src={service.image}
             alt={service.name}
             className="w-full md:h-[60vh] mb-8 rounded-md"
+            data-aos="zoom-in-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
           />
         </div>
 
         <div className="md:flex  md:flex-row justify-between  items-center pt-6 mb-20">
-          <div className="md:w-1/2">
-            <h2 className=" text-gray-800 mb-8 text-2xl md:text-[3vw]">
+          <div className="md:w-1/2" data-aos="zoom-in-up">
+            <h2 className=" text-gray-800 mb-8 text-2xl md:text-[3vw] leading-none">
               {service.name}
             </h2>
-            <p className="text-gray-700 mb-8">{service.details}</p>
+            <p className="text-gray-700 mb-8 ">{service.details}</p>
           </div>
-          <div className="flex flex-col md:flex-col md:w-1/3 gap-2">
+          <div className="flex flex-col md:flex-col md:w-1/3 gap-2" data-aos="zoom-in-up">
             <h3 className="no-underline text-gray-700">Available Hours*</h3>
             <p className="flex justify-between py-4 ">
               Monday - Friday{" "}

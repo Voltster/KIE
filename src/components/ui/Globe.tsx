@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+"use client";
+import { useEffect, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
+import ThreeGlobe from "three-globe";
 import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import ThreeGlobe from "three-globe";
-import countries from "../../utils/globe.json"; // Adjust the path as needed
-
+import countries from "../../utils/globe.json";
 declare module "@react-three/fiber" {
   interface ThreeElements {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
@@ -60,7 +60,7 @@ interface WorldProps {
 
 let numbersOfRings = [0];
 
-const Globe = ({ globeConfig, data }: WorldProps) => {
+export function Globe({ globeConfig, data }: WorldProps) {
   const [globeData, setGlobeData] = useState<
     | {
         size: number;
@@ -228,9 +228,9 @@ const Globe = ({ globeConfig, data }: WorldProps) => {
       <threeGlobe ref={globeRef} />
     </>
   );
-};
+}
 
-const WebGLRendererConfig = () => {
+export function WebGLRendererConfig() {
   const { gl, size } = useThree();
 
   useEffect(() => {
@@ -240,9 +240,9 @@ const WebGLRendererConfig = () => {
   }, []);
 
   return null;
-};
+}
 
-const World = (props: WorldProps) => {
+export function World(props: WorldProps) {
   const { globeConfig } = props;
   const scene = new Scene();
   scene.fog = new Fog(0xffffff, 400, 2000);
@@ -276,9 +276,9 @@ const World = (props: WorldProps) => {
       />
     </Canvas>
   );
-};
+}
 
-const hexToRgb = (hex: string) => {
+export function hexToRgb(hex: string) {
   var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   hex = hex.replace(shorthandRegex, function (m, r, g, b) {
     return r + r + g + g + b + b;
@@ -292,9 +292,9 @@ const hexToRgb = (hex: string) => {
         b: parseInt(result[3], 16),
       }
     : null;
-};
+}
 
-const genRandomNumbers = (min: number, max: number, count: number) => {
+export function genRandomNumbers(min: number, max: number, count: number) {
   const arr = [];
   while (arr.length < count) {
     const r = Math.floor(Math.random() * (max - min)) + min;
@@ -302,6 +302,4 @@ const genRandomNumbers = (min: number, max: number, count: number) => {
   }
 
   return arr;
-};
-
-export default World;
+}

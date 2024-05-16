@@ -2,7 +2,7 @@ import React from 'react'
 
 const TestimonialsCard = ({ quote, author, image }) => {
   return (
-    <div className="flex flex-col h-[65vh] md:h-[25vw] border-l border-gray-600  p-6 pl-10  m-4 cursor-pointer ">
+    <div className="flex flex-col h-[65vh] md:h-[25vw] border-l border-gray-600  p-6 pl-10  m-4 cursor-pointer " data-aos="zoom-in-left">
     <div className="flex flex-col justify-center items-center">
 
       {image && (

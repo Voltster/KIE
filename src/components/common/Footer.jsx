@@ -73,11 +73,21 @@ const Footer = () => {
       <footer className="bg-blue-700">
         <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
           <div className="flex justify-center flex-col items-center max-w-lg mx-auto ">
-            <strong className="block text-center text-xl font-bold text-gray-50 sm:text-3xl">
+            <h4
+              className="block text-center text-xl font-bold text-gray-50 sm:text-3xl"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-duration="1000"
+            >
               High-Quality Printing Solutions | We Deliver Exceptional Results.
               Get a Quote Today!
-            </strong>
-            <button className="btn mt-4 ">
+            </h4>
+            <button
+              className="btn mt-4 "
+              data-aos="fade-up"
+              data-aos-delay="30"
+              data-aos-duration="1000"
+            >
               <Link
                 to="mailto:konceptindia.enterprises@gmail.com"
                 className="flex items-center gap-3 md:text-[1vw]"
@@ -87,7 +97,9 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32" data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000">
             <div className="mx-auto max-w-sm lg:max-w-none">
               <p className="mt-4 text-center text-gray-100 lg:text-left lg:text-lg">
                 Ready to experience the Koncept India difference? Explore our
@@ -96,7 +108,8 @@ const Footer = () => {
               </p>
 
               <div className="mt-6 flex justify-center gap-4 lg:justify-start">
-                <Link to="https://www.facebook.com/profile.php?id=61550328595222"
+                <Link
+                  to="https://www.facebook.com/profile.php?id=61550328595222"
                   className="text-gray-100 transition hover:text-gray-100/75"
                   target="_blank"
                   rel="noreferrer"
@@ -117,7 +130,8 @@ const Footer = () => {
                   </svg>
                 </Link>
 
-                <Link to="https://www.instagram.com/konceptindia.enterprises/?hl=en"
+                <Link
+                  to="https://www.instagram.com/konceptindia.enterprises/?hl=en"
                   className="text-gray-100 transition hover:text-gray-100/75"
                   href="#"
                   target="_blank"
@@ -206,16 +220,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-16 border-t border-gray-100 pt-8">
+          <div className="mt-16 border-t border-gray-100 pt-8" 
+          >
             <p className="text-center text-xs/relaxed text-gray-100">
               © Company 2024. All rights reserved.
               <br />
-              Created with 
+              Created by
               <Link
                 to={""}
-                className="text-gray-100 underline transition hover:text-gray-100/75"
+                className="text-gray-100  transition hover:text-gray-100/75 ml-1"
               >
-                Rohit
+                 Rohit
               </Link>
             </p>
           </div>
