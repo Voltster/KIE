@@ -32,7 +32,7 @@ const ServiceCard = ({ service }) => {
           className="w-full md:h-48 lg:h-[40vh]"
         />
       </div>
-      <div className="w-full md:w-6/12 px-16 mt-4 mb-12">
+      <div className="w-full md:w-6/12 md:px-16 mt-4 mb-12">
         <h3 className=" text-2xl font-semibold mb-2 no-underline mx-auto ">
           {service.name}
         </h3>

@@ -103,7 +103,7 @@ const Navbar = () => {
             <button
               onClick={toggleNavbar}
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-blue-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-700 focus:outline-none "
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -146,13 +146,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
+      <div className={`${isOpen ? "block" : "hidden"} md:hidden`} >
         <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <li>
             <NavLink
               to="/"
               onClick={handleNavLinkClick}
-              className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" 
             >
               Home
             </NavLink>

@@ -19,7 +19,7 @@ const LayoutGrid = ({ cards }) => {
   return (
     <div className="w-full h-screen p-2 grid grid-cols-3 md:grid-cols-4  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, "")} data-aos="zoom-in">
+        <div key={i} className={cn(card.className, "")}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
@@ -61,7 +61,7 @@ const BlurImage = ({ card }) => {
       className={cn(
         "object-cover object-center absolute inset-0 h-full w-full transition duration-200 aspect-square",
         loaded ? "blur-none" : "blur-md"
-      )}  
+      )}
       alt="thumbnail"
     />
   );

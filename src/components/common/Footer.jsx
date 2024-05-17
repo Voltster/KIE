@@ -1,75 +1,10 @@
 import React from "react";
-import { Vortex } from "../ui/Vortex";
-import { FaArrowRight, FaPhoneFlip } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 
 const Footer = () => {
   return (
     <>
-      {/* <div className="w-screen h-screen bg-transparent"></div>
-      <div className="fixed bottom-0 z-0 w-full mx-auto rounded-md  h-full overflow-hidden">
-        <Vortex
-          backgroundColor="black"
-          // rangeY={200}
-          particleCount={400}
-          
-          className=" flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-        >
-          <div class="text-white flex justify-between w-11/12 mx-auto my-[4vw] ">
-            <div class="flex flex-col text-2xl font-bold space-y-3">
-              <Link to="/service">Work</Link>
-              <Link to="/about">About us</Link>
-              <Link to="/team">Our Team</Link>
-              <Link to="/contact">Contact</Link>
-            </div>
-            <div class="right">
-              <p className="text-white my-4 text-2xl border-b pb-1">
-                Let's Bring Your Vision to Life!
-              </p>
-              <button className="btn">
-                <Link
-                  to="mailto:konceptindia.enterprises@gmail.com"
-                  className="flex items-center gap-3 text-[1vw]"
-                >
-                  Get in touch <FaArrowRight />
-                </Link>
-              </button>
-            </div>
-          </div>
-          <h1 className="text-white text-[8vh] md:text-[8vw] font-bold text-center uppercase example">
-            koncept india enterprises
-          </h1>
-          <ul className="w-11/12 mx-auto flex flex-col sm:flex-row sm: justify-between items-center gap-4 border-t border-gray-600 text-white py-12 text-[1vw]">
-            <li>Copyright © Koncept India Enterprises</li>
-            <li>
-              <Link to="tel:+ 12345 67890" className="hover:underline flex items-center gap-2">
-              <FaPhoneFlip />
-                +91 12345 67890
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://www.instagram.com/konceptindia.enterprises/"
-                className="hover:underline flex items-center gap-2"
-              >
-                <IoLogoInstagram />
-                Instagram
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="www.linkedin.com/in/paramveer-sharma-286804259"
-                className="hover:underline flex items-center gap-2"
-              >
-                <IoLogoLinkedin />
-                Linkdin
-              </Link>
-            </li>
-          </ul>
-        </Vortex>
-      </div> */}
-
       <footer className="bg-blue-700">
         <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
           <div className="flex justify-center flex-col items-center max-w-lg mx-auto ">
@@ -97,9 +32,12 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32" data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000">
+          <div
+            className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <div className="mx-auto max-w-sm lg:max-w-none">
               <p className="mt-4 text-center text-gray-100 lg:text-left lg:text-lg">
                 Ready to experience the Koncept India difference? Explore our
@@ -220,8 +158,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-16 border-t border-gray-100 pt-8" 
-          >
+          <div className="mt-16 border-t border-gray-100 pt-8">
             <p className="text-center text-xs/relaxed text-gray-100">
               © Company 2024. All rights reserved.
               <br />
@@ -230,7 +167,7 @@ const Footer = () => {
                 to={""}
                 className="text-gray-100  transition hover:text-gray-100/75 ml-1"
               >
-                 Rohit
+                Rohit
               </Link>
             </p>
           </div>
