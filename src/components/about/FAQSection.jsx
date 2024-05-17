@@ -64,10 +64,10 @@ const FAQSection = () => {
                 activeFAQ === index ? "active" : ""
               }`}
               onClick={() => toggleFAQ(index)}
-              data-aos="zoom-in"
+             
             >
               <div className="flex justify-between  px-8">
-                <h4 className=" font-semibold md:font-normal md:text-3xl text-lg ">
+                <h4 className=" text-gray-900 font-semibold md:font-normal md:text-3xl text-lg ">
                   {faq.question}
                 </h4>
                 <span className="text-gray-700 font-bold text-3xl">

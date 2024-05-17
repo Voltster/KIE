@@ -32,12 +32,12 @@ const Home = () => {
           data-aos-anchor-placement="top-center"
         >
           <h1 className="bg-gradient-to-l from-blue-500 to-blue-800 bg-clip-text text-transparent">
-            Precision, Innovation, and Excellence in Every Print
+            High Quality Printing with Guaranteed Satisfaction
           </h1>
           <p className="my-8">
-            Explore our comprehensive printing services, including offset,
-            digital, screen, leaf, and UV printing, each designed to bring your
-            vision to life.
+            Get all your design and printing needs covered in one convenient
+            location with our services. We assure high-quality prints that will
+            bring you joy.
           </p>
           <button className="btn mt-4 bg-blue-500 border-blue-500 group hover:bg-blue-600 hover:border-blue-500 ">
             <Link

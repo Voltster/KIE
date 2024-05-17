@@ -66,18 +66,18 @@ body {
 
 @layer components {
   h1 {
-    @apply text-gray-950 text-[5vh] sm:text-[5vw]  md:text-[4vw] font-bold;
+    @apply text-blue-950 text-[5vh] sm:text-[5vw]  md:text-[4vw] font-bold;
   }
 
   h2 {
-    @apply text-gray-900 text-[5vh]  md:text-[3vw] font-bold leading-none;
+    @apply text-blue-900 text-[5vh]  md:text-[3vw] font-bold leading-none;
   }
   h3 {
-    @apply text-gray-800 text-[4vh]  md:text-[2vw] font-bold;
+    @apply text-blue-800 text-[4vh]  md:text-[2vw] font-bold;
   }
 
   h4 {
-    @apply text-gray-800 text-[2.5vh]  md:text-[1.5vw] font-bold;
+    @apply text-blue-800 text-[2.5vh]  md:text-[1.5vw] font-bold;
   }
   h5 {
     @apply font-semibold;

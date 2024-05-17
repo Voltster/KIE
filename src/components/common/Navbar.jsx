@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleNavLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-gradient-to-l from-[#EDF4FA] to-[#F1F8FD] shadow-md fixed top-0 z-[90] w-full ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -147,6 +151,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/"
+              onClick={handleNavLinkClick}
               className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
@@ -155,6 +160,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/about"
+              onClick={handleNavLinkClick}
               className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               About
@@ -163,16 +169,16 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/service"
+              onClick={handleNavLinkClick}
               className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              {" "}
               Services
             </NavLink>
           </li>
-
           <li>
             <NavLink
               to="/gallery"
+              onClick={handleNavLinkClick}
               className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Gallery
@@ -181,6 +187,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/contact"
+              onClick={handleNavLinkClick}
               className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact Us
