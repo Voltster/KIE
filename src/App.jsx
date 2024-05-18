@@ -6,6 +6,7 @@ import whatsappIcon from "./assets/whatsapp.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LoadingSpinner from "./components/common/LoadingSpinner";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import "./App.css";
 
@@ -39,6 +40,7 @@ function App() {
               className="w-[8vh] md:w-[4vw]"
             />
           </Link>
+          <SpeedInsights />
         </div>
       )}
     </>
