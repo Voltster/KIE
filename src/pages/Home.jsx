@@ -1,19 +1,15 @@
 import React from "react";
 import heroImg from "../assets/heroImg.jpeg";
-// import heroImg from "../assets/bgpng.png";
 import OurClients from "../components/OurClients";
 import AboutUs from "../components/AboutUs";
 import WhyUs from "../components/about/WhyUs";
 import OurServices from "../components/Home/OurServices";
 import OurTeam from "../components/team/OurTeam";
 import SpecialOffer from "../components/services/SpecialOffer";
-// import Gallery from "../components/Home/Gallery";
 import Testimonials from "../components/Home/Testimonials";
-import Map from "../components/Home/Map";
 import SocialProof from "../components/common/SocialProof";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa6";
-import PrimaryButton from "../components/common/PrimaryButton ";
+import { FaArrowRight } from "react-icons/fa6"; 
 
 const Home = () => {
   return (
@@ -74,9 +70,7 @@ const Home = () => {
         <OurServices />
         <OurTeam />
         <SpecialOffer />
-        {/* <Gallery/> */}
         <Testimonials />
-        {/* <Map/> */}
       </div>
     </>
   );

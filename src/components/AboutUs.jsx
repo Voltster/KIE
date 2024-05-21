@@ -1,5 +1,7 @@
 import React from "react";
 import about from "../assets/about.jpeg";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa6";
 
 const AboutUs = () => {
   return (
@@ -36,6 +38,16 @@ const AboutUs = () => {
           digital printing, we have the expertise and equipment to deliver
           stunning results.
         </p>
+        <button className="btn mt-4 bg-blue-500 border-blue-500 group hover:bg-blue-600 hover:border-blue-500 ">
+          <Link
+            to="https://drive.google.com/file/d/1E1qrf0e1eL7GqFyj_PCQOZaZtkQYRCQz/view"
+            target="blank"
+            className="flex items-center gap-3  md:text-[1vw] hover:text-blue-500 group-hover:text-blue-500"
+          >
+            Learn More
+            <FaArrowRight />
+          </Link>
+        </button>
       </div>
     </div>
   );

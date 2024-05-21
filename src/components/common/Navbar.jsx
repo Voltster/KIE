@@ -103,7 +103,7 @@ const Navbar = () => {
             <button
               onClick={toggleNavbar}
               type="button"
-              className="bg-blue-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-700 focus:outline-none "
+              className=" inline-flex items-center justify-center p-2 rounded-md text-blue-600 hover:text-blue-  focus:outline-none "
               aria-controls="mobile-menu"
               aria-expanded="false"
             >

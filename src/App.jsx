@@ -9,6 +9,7 @@ import LoadingSpinner from "./components/common/LoadingSpinner";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   AOS.init();
@@ -16,7 +17,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000); // Simulate loading time
+    const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -27,6 +28,7 @@ function App() {
       ) : (
         <div className="max-w-[100vw] bg-[#F6F9FE] scroll-smooth  min-h-[100vh] overflow-x-hidden relative">
           <Navbar />
+          <ScrollToTop />
           <Outlet />
           <Footer />
           <Link
