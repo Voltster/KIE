@@ -7,7 +7,7 @@ import { FaPhoneFlip } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
-import globe from "../assets/globe1.png";
+import conatctImg from "../assets/contact.svg";
 // import globe from "../assets/globe.svg";
 
 const Contact = () => {
@@ -57,13 +57,11 @@ const Contact = () => {
           </ul>
           <div className="w-full ">
             <img
-              src={globe}
-              alt="globe"
+              src={conatctImg}
               loading="lazy"
-              className="h-[40vh] md:h-[60vh] mx-auto  "
+              className="h-[40vh] md:h-[40vh] mx-auto  "
             />
           </div>
-          {/* <Globe/> */}
         </div>
         <div className="md:w-1/2" data-aos="fade-right">
           <ContactForm />

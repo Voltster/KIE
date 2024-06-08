@@ -84,7 +84,7 @@ export function LayoutGridDemo() {
       id: 12,
       content: <NotepadsDiaries />,
       className: "md:col-span-1  md:row-span-4",
-      thumbnail: "https://goodmockups.com/wp-content/uploads/2023/11/6-Free-Luxury-Personal-Diary-Journal-Mockup-PSD-Files-7.jpg",
+      thumbnail: "https://img.freepik.com/free-vector/blank-white-open-realistic-paper-notebooks-set_1284-13520.jpg?t=st=1717846456~exp=1717850056~hmac=f4fd0bfdce56574c66672dc9d3e5fbfbc8056745558b7bf9f3ed730df03e922c&w=740",
     },
     {
       id: 13,

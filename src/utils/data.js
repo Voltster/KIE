@@ -1,3 +1,5 @@
+import promotional from "../assets/mockup/Promotional Merchandise.jpg";
+
 const services = [
   {
     id: 1,
@@ -65,7 +67,7 @@ const services = [
     description:
       "Portable and eye-catching rollup banners for trade shows, events, and promotions.",
     image:
-      "src/assets/mockup/rollup-banner.jpg",
+      "https://img.freepik.com/free-vector/abstract-business-rollup-standee-banner_1017-19607.jpg?t=st=1717845765~exp=1717849365~hmac=8aae673c319ce424410b213618684a750242b26a850eaf2976061c6c01930e5e&w=900",
     details: `Stand out at trade shows, conferences, and events with vibrant rollup banners.
         Lightweight and easy to transport, making them perfect for on-the-go marketing.
         Offers large-format printing for high-resolution graphics and clear messaging.
@@ -77,7 +79,7 @@ const services = [
     description:
       "Create personalized calendars with your company branding and custom images.",
     image:
-      "https://img.freepik.com/premium-psd/psd-modern-calendar-mockup_366969-1974.jpg?w=1380",
+      "https://img.freepik.com/free-photo/flat-lay-lunar-calendar-envelope-table_23-2149911187.jpg?t=st=1717846331~exp=1717849931~hmac=8f12ad2709c9da297bf37acc3328bd17134205eacd84c28dbfc770e168ef8610&w=1060",
     details: `Stay top-of-mind with clients and customers all year round with customized calendars.
       Showcase your company's brand, products, and services with every glance.
       Available in various sizes and formats, including wall calendars and desk calendars.
@@ -112,8 +114,7 @@ const services = [
     name: "Promotional Merchandise",
     description:
       "Create branded promotional merchandise to increase brand visibility and loyalty.",
-    image:
-      "src/assets/mockup/Promotional Merchandise.jpg",
+    image: promotional,
     details: `Boost brand recognition and customer engagement with personalized promotional merchandise.
       Choose from a wide range of products including pens, keychains, tote bags, and more.
       Custom printing options available to showcase your logo, slogan, or message.
