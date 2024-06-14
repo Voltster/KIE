@@ -1,169 +1,182 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
-import axios from "axios";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  // const [errors, setErrors] = useState({});
+  const [resultMessage, setResultMessage] = useState("");
+  const [messageClass, setMessageClass] = useState("text-gray-500");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      try {
-        const response = await axios.post("/api/contact", {
-          name,
-          phone,
-          email,
-          message,
-        });
-        console.log(response.data);
-        // Clear form after successful submission
-        setName("");
-        setPhone("");
-        setEmail("");
-        setMessage("");
-        setErrors({});
-      } catch (error) {
-        console.error(error);
+    const formData = new FormData(e.target);
+    const formObject = {};
+    formData.forEach((value, key) => {
+      formObject[key] = value;
+    });
+    const json = JSON.stringify(formObject);
+    setResultMessage("Please wait...");
+    setMessageClass("text-gray-500");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+      const jsonResponse = await response.json();
+      if (response.status === 200) {
+        setResultMessage(jsonResponse.message);
+        setMessageClass("text-green-500");
+      } else {
+        setResultMessage(jsonResponse.message);
+        setMessageClass("text-red-500");
       }
+    } catch (error) {
+      console.error(error);
+      setResultMessage("Something went wrong!");
+      setMessageClass("text-red-500");
+    } finally {
+      e.target.reset();
+      setTimeout(() => {
+        setResultMessage("");
+      }, 5000);
     }
-  };
-
-  const validateForm = () => {
-    let errors = {};
-    let isValid = true;
-
-    if (!name) {
-      errors.name = "Name is required";
-      isValid = false;
-    }
-
-    if (!phone) {
-      errors.phone = "Phone number is required";
-      isValid = false;
-    }
-
-    if (!email) {
-      errors.email = "Email address is required";
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = "Invalid email address";
-      isValid = false;
-    }
-
-    if (!message) {
-      errors.message = "Message is required";
-      isValid = false;
-    }
-
-    setErrors(errors);
-    return isValid;
+    
   };
 
   return (
-    <form onSubmit={handleSubmit} className="rounded px-8 pt-6 pb-8 mb-4">
-      <div class="sm:col-span-3">
-        <label
-          for="first-name"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >
-          Full Name <span className="text-red-500">*</span>
-        </label>
-        <div class="mt-2">
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            autocomplete="given-name"
-            value={name}
-            required
-            placeholder="Rohit Mishra"
-            onChange={(e) => setName(e.target.value)}
-            class="block w-full rounded-md p-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400 outline-none border focus:border-blue-500 sm:text-sm sm:leading-6"
-          />
-        </div>
-      </div>
+    <div>
+      <div className="container mx-auto mt-12 md:mt-0">
+        <div className="max-w-xl mx-auto rounded-md ">
+          <div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="hidden"
+                name="access_key"
+                value="e6d3898d-ed03-4b2d-990c-ee23d102c011"
+              />
+             <input type="hidden" name="from_name" value="New Inquiry Received"/>
+              <input
+                type="hidden"
+                name="subject"
+                value="New Submission from KIE"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                id=""
+                style={{ display: "none" }}
+              />
 
-      <div class="sm:col-span-3 mt-2">
-        <label
-          for="phone-no"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >
-          Phone No <span className="text-red-500">*</span>
-        </label>
-        <div class="mt-2">
-          <input
-            type="tel"
-            pattern="[0-9]{10}"
-            name="first-name"
-            id="phone-no"
-            autocomplete="given-name"
-            value={phone}
-            required
-            placeholder="+91 1234567890"
-            onChange={(e) => setPhone(e.target.value)}
-            class="block w-full rounded-md border p-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6 outline-none  focus:border-blue-500"
-          />
+              <div className="flex mb-6 space-x-4">
+                <div className="w-full md:w-1/2">
+                  <label
+                    htmlFor="first_name"
+                    className="block mb-2 text-sm text-gray-600 "
+                  >
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    placeholder="John"
+                    required
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                  />
+                </div>
+                <div className="w-full md:w-1/2">
+                  <label
+                    htmlFor="last_name"
+                    className="block mb-2 text-sm text-gray-600 "
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    placeholder="Doe"
+                    required
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                  />
+                </div>
+              </div>
+
+              <div className="flex mb-6 space-x-4">
+                <div className="w-full md:w-1/2">
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 text-sm text-gray-600 "
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="you@company.com"
+                    required
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                  />
+                </div>
+                <div className="w-full md:w-1/2">
+                  <label
+                    htmlFor="phone"
+                    className="block mb-2 text-sm text-gray-600 "
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="+91 1234567890"
+                    required
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                  />
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <label
+                  htmlFor="message"
+                  className="block mb-2 text-sm text-gray-600 "
+                >
+                  Your Message
+                </label>
+                <textarea
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="btn mt-4 bg-blue-500 border-blue-500 group hover:bg-blue-600 hover:border-blue-500  mx-auto"
+              >
+                <p className="flex items-center gap-3  md:text-[1vw] hover:text-blue-500 text-white group-hover:text-blue-500">
+                  Explore Our Services
+                  <FaArrowRight />
+                </p>
+              </button>
+              <p
+                className={`text-base text-center mt-2 ${messageClass}`}
+                id="result"
+              >
+                {resultMessage}
+              </p>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="sm:col-span-4 mt-2">
-        <label
-          for="email"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >
-          Email address <span className="text-red-500">*</span>
-        </label>
-        <div class="mt-2">
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            value={email}
-            required
-            placeholder="rohit@gmail.com"
-            onChange={(e) => setEmail(e.target.value)}
-            class="block w-full rounded-md border p-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6 outline-none  focus:border-blue-500"
-          />
-        </div>
-      </div>
-      <div className="mb-6 mt-2">
-        <label
-          htmlFor="message"
-          className="block text-sm text-gray-700 font-medium mb-2"
-        >
-          Message <span className="text-red-500">*</span>
-        </label>
-        <textarea
-          id="message"
-          value={message}
-          required
-          placeholder="Hello ji"
-          onChange={(e) => setMessage(e.target.value)}
-          className=" appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-40 resize-none  sm:text-sm sm:leading-6  focus:border-blue-500"
-        />
-      </div>
-      <div className="flex items-center justify-between">
-        <button
-          className="btn border-blue-50  bg-blue-500 after:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-white"
-          type="submit"
-        >
-          <span className="flex items-center gap-3 text-[1vh] md:text-[1vw]">
-            Send Message <FaArrowRight />
-          </span>
-        </button>
-        <a
-          href="#"
-          className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-        >
-          Need More Help?
-        </a>
-      </div>
-    </form>
+    </div>
   );
 };
 

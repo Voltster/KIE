@@ -160,11 +160,11 @@ const Footer = () => {
 
           <div className="mt-16 border-t border-gray-100 pt-8">
             <p className="text-center text-xs/relaxed text-gray-100">
-              © Company 2024. All rights reserved.
+              © Koncept India Enterprises 2024. All rights reserved.
               <br />
               Created by
               <Link
-                to={""}
+                to={"www.linkedin.com/in/rohit-mishra954"} target="blank"
                 className="text-gray-100  transition hover:text-gray-100/75 ml-1"
               >
                 Rohit

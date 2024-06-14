@@ -9,13 +9,12 @@ import SpecialOffer from "../components/services/SpecialOffer";
 import Testimonials from "../components/Home/Testimonials";
 import SocialProof from "../components/common/SocialProof";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa6"; 
+import { FaArrowRight } from "react-icons/fa6";
 
 const Home = () => {
   return (
     <>
       <div className=" w-[100vw] h-[90vh] md:h-[100vh] relative bgHome flex flex-col md:flex-row  justify-center items-center space-x-4 z-30">
-        {/* Left div */}
         <div
           className="w-11/12 md:w-4/12"
           data-aos="fade-up"
@@ -50,7 +49,7 @@ const Home = () => {
           <img
             src={heroImg}
             alt="Every Print"
-            className="absolute rounded-md right-[10%] top-[25%]  w-[30vw] h-[85vh]"
+            className="absolute rounded-md right-[10%] top-[25%]  w-[30vw] h-[85vh] shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]"
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="50"

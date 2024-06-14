@@ -172,7 +172,7 @@ const WhyUs = () => {
       </h2>
 
       <div className="px-3 md:lg:xl:px-40 py-20 bg-opacity-10">
-        <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group md:bg-white shadow-xl shadow-neutral-100 md:border ">
+        <div className="grid grid-cols-1 lg:md:grid-cols-3 group md:bg-white shadow-xl shadow-neutral-100 md:border ">
           {cardComponents}
         </div>
       </div>

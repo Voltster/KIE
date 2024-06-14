@@ -1,17 +1,7 @@
-/* My CSS */
-
 .bgHome {
-  background: url("./assets/bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.bentoBg {
-  background-image: url("https://img.freepik.com/free-vector/colorful-mandala-stationery_23-2147510258.jpg?t=st=1713505408~exp=1713509008~hmac=6ad83325a420ad0ada664ba82362cd4d3cd9a2ab4dfbec59c6953951677015ad&w=826");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .swiper {
@@ -33,6 +23,36 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }
 
 .btn::after {
@@ -59,23 +79,23 @@
         #0000 101%
       )
       calc(50% - 60px) 0/120px 100%,
-    radial-gradient(34.99px at 50% calc(100% + 18px), #00000000 99%, #000 101%) 50%
-      calc(100% - 30px) / 120px 100% repeat-x;
+    radial-gradient(34.99px at 50% calc(100% + 18px), #00000000 99%, #000 101%)
+      50% calc(100% - 30px) / 120px 100% repeat-x;
 
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
 
-.mask  {
-  -webkit-mask-image:url(/wp-content/uploads/2020/10/blob.svg);
-  -webkit-mask-position:center center;
-  -webkit-mask-repeat:no-repeat;
-  -webkit-mask-size:cover;
+.mask {
+  -webkit-mask-image: url(/wp-content/uploads/2020/10/blob.svg);
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
 
-  mask-image:url(/wp-content/uploads/2020/10/blob.svg);
-  mask-position:center center;
-  mask-repeat:no-repeat;
-  mask-size:cover;
+  mask-image: url(/wp-content/uploads/2020/10/blob.svg);
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 .curve {

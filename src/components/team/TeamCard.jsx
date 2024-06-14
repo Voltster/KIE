@@ -24,18 +24,15 @@ const TeamCard = ({
       <div
         className={`w-full  md:w-[50%] md:flex flex-row items-start justify-center overflow-hidden rounded-md md:rounded-none ${customClass}`}
       >
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          className=" md:w-3/6 object-cover"
-        />
-        <span
+        <div className="w-full md:h-[45vh] overflow-hidden">
+          <img src={src} alt={alt} loading="lazy" className="" />
+        </div>
+        {/* <span
           className={`md:w-3/6 h-full   flex flex-col justify-center items-center py-4 rounded-b-[10vw] md:rounded-none ${bgColor}`}
         >
           <h4 className="text-white">{heading}</h4>
           <p className="w-[60%] text-center text-white ">{text}</p>
-        </span>
+        </span> */}
       </div>
 
       {/* Right Section */}

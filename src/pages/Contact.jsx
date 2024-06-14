@@ -8,18 +8,17 @@ import { Link } from "react-router-dom";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import conatctImg from "../assets/contact.svg";
-// import globe from "../assets/globe.svg";
 
 const Contact = () => {
   return (
-    <div className="relative z-50 bg-inherit ">
+    <div className="relative z-50 bg-inherit">
       <SectionHeader
         heading={"Get in Touch with KIE"}
         text={
           "At Koncept India Enterprises, we value open communication and strive to provide exceptional customer service. "
         }
       />
-      <div className="w-11/12 mx-auto flex flex-col md:flex-row ">
+      <div className="w-11/12 mx-auto flex flex-col md:flex-row">
         <div className="md:w-1/2" data-aos="fade-right">
           <h2>Need More Help?</h2>
           <p>
@@ -55,11 +54,11 @@ const Contact = () => {
               </Link>
             </li>
           </ul>
-          <div className="w-full ">
+          <div className="w-full">
             <img
               src={conatctImg}
               loading="lazy"
-              className="h-[40vh] md:h-[40vh] mx-auto  "
+              className=" md:h-[40vh] mx-auto  "
             />
           </div>
         </div>

@@ -5,30 +5,31 @@ import OurClients from "../components/OurClients";
 import Testimonials from "../components/Home/Testimonials";
 import SectionHeader from "../components/common/SectionHeader";
 import SocialProof from "../components/common/SocialProof";
+import owner from ".././assets/Owner.jpg"
 
-const Teams = [
-  {
-    heading: "Monika Mam",
-    description: "",
-    img: "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fHNoaXJ0fGVufDB8fDB8fHww",
-  },
-  {
-    heading: "Roshan Jha",
-    description: "",
-    img: "https://images.unsplash.com/photo-1591078771377-d06325f68465?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAzfHxzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
-  },
-  {
-    heading: "Anil Kumar",
-    description: "",
-    img: "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fHNoaXJ0fGVufDB8fDB8fHww",
-  },
+// const Teams = [
+//   {
+//     heading: "Monika Mam",
+//     description: "",
+//     img: "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fHNoaXJ0fGVufDB8fDB8fHww",
+//   },
+//   {
+//     heading: "Roshan Jha",
+//     description: "",
+//     img: "https://images.unsplash.com/photo-1591078771377-d06325f68465?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAzfHxzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+//   },
+//   {
+//     heading: "Anil Kumar",
+//     description: "",
+//     img: "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fHNoaXJ0fGVufDB8fDB8fHww",
+//   },
 
-  {
-    heading: "Gagan Sir",
-    description: "",
-    img: "https://images.unsplash.com/photo-1591078771377-d06325f68465?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAzfHxzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
-  },
-];
+//   {
+//     heading: "Gagan Sir",
+//     description: "",
+//     img: "https://images.unsplash.com/photo-1591078771377-d06325f68465?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAzfHxzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+//   },
+// ];
 
 const About = () => {
   return (
@@ -75,13 +76,15 @@ const About = () => {
         >
           <img
             className="rounded-t-full"
-            src="https://plus.unsplash.com/premium_photo-1682430259342-427ec43ebc38?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
+            // src="https://plus.unsplash.com/premium_photo-1682430259342-427ec43ebc38?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={owner}
+            alt="owner profile"
+            loading="lazy"
           />
         </div>
       </div>
       <OurClients />
-      <div className="w-10/12 mx-auto">
+      {/* <div className="w-10/12 mx-auto">
         <h2 className="text-center my-10 text-3xl font-semibold md:font-bold  md:text-[3vw] ">
           Creative Production Team
         </h2>
@@ -108,7 +111,7 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       <Testimonials />
     </section>
   );

@@ -13,15 +13,20 @@ const ServicesSection = () => {
             data-aos="zoom-in"
           >
             <div className=" rounded-lg overflow-hidden ">
-              <img
-                src={service.image}
-                alt={service.name}
-                className="aspect-square group-hover:scale-[110%] transition-all duration-300 ease-in-out"
-              />
+              <div className="overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.name}
+                  className="aspect-square group-hover:scale-[110%] transition-all duration-300 ease-in-out"
+                />
+              </div>
               <div className="p-4 ">
                 <h3 className="text-xl">{service.name}</h3>
                 <p>{service.description}</p>
-                <Link to={`/service/${service.id}`} className="text-blue-500 hover:underline">
+                <Link
+                  to={`/service/${service.id}`}
+                  className="text-blue-500 hover:underline"
+                >
                   See More Details
                 </Link>
               </div>

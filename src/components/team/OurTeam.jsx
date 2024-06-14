@@ -1,12 +1,14 @@
 import React from 'react'
 import TeamCard from './TeamCard'
+import team from "../../assets/team.jpg"
+import team1 from "../../assets/team1.jpg"
 
 const OurTeam = () => {
   return (
     <div className='my-[5vh] md:my-[4vw]'>
       <TeamCard 
         customClass={""}
-        src={'https://i.pinimg.com/564x/d5/f5/fc/d5f5fca3d27ccd8e9437c564b5701286.jpg'}
+        src={team}
         alt={"teams"}
         heading={'Anil Verma'}
         text={`Graphic Designer Of Koncept India Enterprises`}
@@ -16,7 +18,7 @@ const OurTeam = () => {
       />
        <TeamCard 
         customClass={"reverse"}
-        src={'https://i.pinimg.com/564x/26/4b/2f/264b2f4eb28380339a65cc2afe1f2040.jpg'}
+        src={team1}
         alt={"teams"}
         heading={'Pandey Ji'}
         text={`Senior Graphic Designer Of Koncept India Enterprises`}
