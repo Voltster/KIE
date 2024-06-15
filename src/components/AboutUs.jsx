@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const AboutUs = () => {
   return (
-    <div className="w-11/12 mx-auto flex flex-col md:flex-row md:justify-center md:items-center space-x-[8vw]  outline-none border-none mt-10 ">
+    <div className="w-11/12 mx-auto flex flex-col md:flex-row md:justify-center md:items-center space-x-[8vw]  outline-none border-none mt-10 py-16">
       <div className="md:w-4/12">
         <img
           src={about}

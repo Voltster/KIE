@@ -66,7 +66,7 @@ body {
 
 @layer components {
   h1 {
-    @apply text-blue-950 text-[5vh] sm:text-[5vw]  md:text-[4vw] font-bold;
+    @apply text-blue-950 text-[3vh] sm:text-[5vw]  md:text-[3vw] font-bold;
   }
 
   h2 {

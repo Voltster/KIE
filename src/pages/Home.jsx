@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../assets/heroImg.jpeg";
+import heroImg from "../assets/heroImg.png";
 import OurClients from "../components/OurClients";
 import AboutUs from "../components/AboutUs";
 import WhyUs from "../components/about/WhyUs";
@@ -14,11 +14,11 @@ import { FaArrowRight } from "react-icons/fa6";
 const Home = () => {
   return (
     <>
-      <div className=" w-[100vw] h-[90vh] md:h-[100vh] relative bgHome flex flex-col md:flex-row  justify-center items-center space-x-4 z-30">
+      <div className=" w-[100vw] h-[90vh] md:h-[80vh] relative bgHome flex flex-col-reverse md:flex-row  justify-center items-center space-x-4 z-30">
         <div
           className="w-11/12 md:w-4/12"
           data-aos="fade-up"
-          data-aos-offset="200"
+          data-aos-offset="100"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
@@ -44,14 +44,12 @@ const Home = () => {
             </Link>
           </button>
         </div>
-        {/* Right div */}
-        <div className="w-5/12 hidden md:block">
+        <div className="md:w-6/12 ">
           <img
             src={heroImg}
-            alt="Every Print"
-            className="absolute rounded-md right-[10%] top-[25%]  w-[30vw] h-[85vh] shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]"
+            alt="Every Print" 
             data-aos="fade-up"
-            data-aos-offset="100"
+            data-aos-offset="50"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -62,7 +60,7 @@ const Home = () => {
         </div>
       </div>
       <div className="relative z-20 bg-inherit">
-        <OurClients />
+        <OurClients customCLass={"-mt-14"} />
         <AboutUs />
         <SocialProof />
         <WhyUs />

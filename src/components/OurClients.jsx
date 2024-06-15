@@ -1,13 +1,13 @@
-import React from 'react'
-import InfinityMoving from './InfinityMoving'
+import React from "react";
+import InfinityMoving from "./InfinityMoving";
 
-const OurClients = () => {
+const OurClients = ({ text, customCLass }) => {
   return (
-    <div className='py-[10vw] text-center bg-gray-50'>
-        <h3>Our Clients</h3>
-      <InfinityMoving/>
+    <div className={`${customCLass}`}>
+      <h3 className="text-center">{text}</h3>
+      <InfinityMoving />
     </div>
-  )
-}
+  );
+};
 
-export default OurClients
+export default OurClients;

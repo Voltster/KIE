@@ -33,7 +33,7 @@ import owner from ".././assets/Owner.jpg"
 
 const About = () => {
   return (
-    <section className="w-screen min-h-[100vh] relative bg-gray-50 z-30 pb-20 outline-none">
+    <section className="w-screen min-h-[100vh] relative z-30 pb-20 outline-none">
       <SectionHeader
         heading={"About Us"}
         text={
@@ -41,7 +41,7 @@ const About = () => {
         }
       />
       <AboutUs />
-      <SocialProof />
+      <SocialProof  />
       <WhyUs />
       <div className=" flex flex-col-reverse md:flex-row justify-center items-center w-11/12 mx-auto gap-20">
         {/* left */}
@@ -83,7 +83,7 @@ const About = () => {
           />
         </div>
       </div>
-      <OurClients />
+      <OurClients  text="Our Clients" customCLass="my-28"/>
       {/* <div className="w-10/12 mx-auto">
         <h2 className="text-center my-10 text-3xl font-semibold md:font-bold  md:text-[3vw] ">
           Creative Production Team

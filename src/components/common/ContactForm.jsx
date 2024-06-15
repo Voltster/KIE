@@ -162,7 +162,7 @@ const ContactForm = () => {
                 className="btn mt-4 bg-blue-500 border-blue-500 group hover:bg-blue-600 hover:border-blue-500  mx-auto"
               >
                 <p className="flex items-center gap-3  md:text-[1vw] hover:text-blue-500 text-white group-hover:text-blue-500">
-                  Explore Our Services
+                  Submit
                   <FaArrowRight />
                 </p>
               </button>
