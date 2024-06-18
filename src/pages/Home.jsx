@@ -46,6 +46,7 @@ const Home = () => {
         </div>
         <div className="md:w-6/12 ">
           <img
+          className="mix-blend-screen"
             src={heroImg}
             alt="Every Print" 
             data-aos="fade-up"
