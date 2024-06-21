@@ -11,6 +11,8 @@ const AboutUs = () => {
           src={about}
           alt="about us"
           className=" rounded-tl-[15vh] md:rounded-tl-[10vw]"
+          data-aos="fade-right"
+          data-aos-delay="50"
         />
       </div>
       <div

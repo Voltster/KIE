@@ -41,6 +41,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 import Home from "./pages/Home.jsx";
+import LoadingSpinner from "./components/common/LoadingSpinner.jsx";
 const About = lazy(() => import("./pages/About.jsx"));
 const Service = lazy(() => import("./pages/Services.jsx"));
 const Gallery = lazy(() => import("./pages/Gallery.jsx"));
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<LoadingSpinner/>}>
             <About />
           </Suspense>
         ),

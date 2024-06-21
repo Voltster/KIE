@@ -57,6 +57,7 @@ const Home = () => {
             data-aos-mirror="true"
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
+            width="800"
           />
         </div>
       </div>

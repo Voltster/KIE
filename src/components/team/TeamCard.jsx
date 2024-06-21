@@ -15,27 +15,18 @@ const TeamCard = ({
 
   return (
     <div
-      className={`w-11/12 mx-auto block md:flex flex-row gap-20 ${
+      className={`w-10/12 mx-auto block md:flex flex-row gap-20 ${
         isReversed ? "flex-row-reverse" : customClass
       }`}
       data-aos="zoom-in-down"
     >
-      {/* Left Section */}
       <div
         className={`w-full  md:w-[50%] md:flex flex-row items-start justify-center overflow-hidden rounded-md md:rounded-none ${customClass}`}
       >
         <div className="w-full md:h-[45vh] overflow-hidden">
           <img src={src} alt={alt} loading="lazy" className="" />
         </div>
-        {/* <span
-          className={`md:w-3/6 h-full   flex flex-col justify-center items-center py-4 rounded-b-[10vw] md:rounded-none ${bgColor}`}
-        >
-          <h4 className="text-white">{heading}</h4>
-          <p className="w-[60%] text-center text-white ">{text}</p>
-        </span> */}
       </div>
-
-      {/* Right Section */}
       <div
         className={`flex flex-col justify-center md:w-[40%] p-8 ${customClass}`}
       >
