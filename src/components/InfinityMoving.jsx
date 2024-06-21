@@ -10,15 +10,10 @@ import yogh from "../assets/our clients/Yogh.png";
 import pullman from "../assets/our clients/pngwing.com (1).png";
 import novotel from "../assets/our clients/pngwing.com (2).png";
 import hyattR from "../assets/our clients/pngwing.com (4).png";
-import ibis from "../assets/our clients/pngwing.com (5).png";
+import ibis from "../assets/our clients/pngwing.com (5).jpg";
 import holiday from "../assets/our clients/pngwing.com (6).png";
 import Maxxis from "../assets/our clients/Maxxis-Tires.png";
 import goa from "../assets/our clients/W goa.jpg";
-
-// const clients = [
-//     { image: aloft },
-//     // { image: clientImage2 },
-// ]
 
 const InfinityMoving = () => {
   return (
