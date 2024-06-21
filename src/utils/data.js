@@ -1,4 +1,10 @@
 import promotional from "../assets/mockup/Promotional Merchandise.jpg";
+import offsetprint from "../assets/mockup/offset pritning.jpg";
+import digitalprint from "../assets/mockup/digital print.jpg";
+import banner from "../assets/mockup/rollup-banner.jpg";
+import calender from "../assets/mockup/calendar.jpg";
+import novotel from "../assets/mockup/tag.jpg";
+
 
 const services = [
   {
@@ -6,8 +12,7 @@ const services = [
     name: "Offset Printing",
     description:
       "High-quality offset printing for brochures, catalogs, and marketing materials.",
-    image:
-      "https://img.freepik.com/free-psd/3d-icon-with-printer-mechanism_23-2150813746.jpg?t=st=1713775356~exp=1713778956~hmac=e6830419694e6b449950d79a21c18cf408c7c8bce83ea84b8ee709c8d54c6d82&w=826",
+    image: offsetprint,
     details: `Ideal for high-volume projects requiring exceptional quality and vibrant colors.
       Perfect for brochures, catalogs, magazines, annual reports, packaging materials, and more.
       Offers a wide range of paper stocks and finishing options to create truly impactful pieces.
@@ -18,8 +23,7 @@ const services = [
     name: "Digital Printing",
     description:
       "Fast and efficient digital printing for short-run projects and personalized prints.",
-    image:
-      "https://img.freepik.com/free-psd/business-stationery-mock-up-design_1307-29.jpg?t=st=1713775398~exp=1713778998~hmac=5e96be1ef0c1c75a8f1655bf3566db44c1efd2bf695b7e4bc1974e24cdb62cd7&w=826",
+    image: digitalprint,
     details: `The perfect solution for fast turnaround times and on-demand printing needs.
       Ideal for smaller print runs, personalized materials, flyers, presentations, and marketing collateral.
       Offers excellent image quality and vibrant colors for a professional look.
@@ -66,8 +70,7 @@ const services = [
     name: "Rollup Banners",
     description:
       "Portable and eye-catching rollup banners for trade shows, events, and promotions.",
-    image:
-      "https://img.freepik.com/free-vector/abstract-business-rollup-standee-banner_1017-19607.jpg?t=st=1717845765~exp=1717849365~hmac=8aae673c319ce424410b213618684a750242b26a850eaf2976061c6c01930e5e&w=900",
+    image: banner,
     details: `Stand out at trade shows, conferences, and events with vibrant rollup banners.
         Lightweight and easy to transport, making them perfect for on-the-go marketing.
         Offers large-format printing for high-resolution graphics and clear messaging.
@@ -78,8 +81,7 @@ const services = [
     name: "Customized Calendars",
     description:
       "Create personalized calendars with your company branding and custom images.",
-    image:
-      "https://img.freepik.com/free-photo/flat-lay-lunar-calendar-envelope-table_23-2149911187.jpg?t=st=1717846331~exp=1717849931~hmac=8f12ad2709c9da297bf37acc3328bd17134205eacd84c28dbfc770e168ef8610&w=1060",
+    image: calender,
     details: `Stay top-of-mind with clients and customers all year round with customized calendars.
       Showcase your company's brand, products, and services with every glance.
       Available in various sizes and formats, including wall calendars and desk calendars.
@@ -102,8 +104,7 @@ const services = [
     name: "Label and Tag Printing",
     description:
       "High-quality label and tag printing for product labeling and branding purposes.",
-    image:
-      "https://img.freepik.com/free-photo/pack-hanging-tags-plain-background_23-2148283782.jpg?t=st=1714391178~exp=1714394778~hmac=0628eedfa2046104c2ca9ae036bcd01905ee124b3da7356057cdbde055e99d42&w=1380",
+    image: novotel,
     details: `Enhance your product packaging with professionally printed labels and tags.
       Customizable designs to reflect your brand identity and product information.
       Durable materials and printing techniques ensure long-lasting and eye-catching labels.
@@ -120,7 +121,5 @@ const services = [
       Custom printing options available to showcase your logo, slogan, or message.
       Perfect for giveaways, corporate events, and marketing campaigns.`,
   },
-
-  // Add more services as needed
 ];
 export default services;

@@ -1,5 +1,17 @@
 import React from "react";
 import LayoutGrid from "../ui/LayoutGrid";
+import table from "../../assets/mockup/print.jpg";
+import Flyers from "../../assets/mockup/Leaflets & Flyers.jpg";
+import coprate from "../../assets/mockup/coprate.jpg";
+import Invitations from "../../assets/mockup/Invitations.jpg";
+import box from "../../assets/mockup/box.jpg";
+import Merchandise from "../../assets/mockup/Merchandise.jpg";
+import GymBag from "../../assets/mockup/Gym Bag.jpg";
+import PromotionalMerchandise from "../../assets/mockup/Promotional Merchandise.jpg";
+import diary from "../../assets/mockup/diary.jpg";
+import Bag from "../../assets/mockup/Bag.jpg";
+import Cover from "../../assets/mockup/Cover.jpg";
+import printing from "../../assets/mockup/printing.jpg";
 
 export function LayoutGridDemo() {
   const cards = [
@@ -7,99 +19,84 @@ export function LayoutGridDemo() {
       id: 1,
       content: <PrintingServices />,
       className: "md:col-span-2 md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/free-photo/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai_188544-15381.jpg?t=st=1714373198~exp=1714376798~hmac=4ab9ec70102735c83fc95ae1d9ac14903fed2ee5a7c440d26f0eef4f6ce7c77b&w=1380",
+      thumbnail: printing,
     },
     {
       id: 2,
       content: <LeafletsFlyers />,
       className: "col-span-1  md:row-span-2",
-      thumbnail:
-        "https://img.freepik.com/free-vector/gradient-core-values-flyers-pack_23-2149081664.jpg?t=st=1714373270~exp=1714376870~hmac=bc290f6febd99cea07c72882b49d3c290eac19708a39c93419f5b42b53fe6406&w=1380",
+      thumbnail: Flyers,
     },
     {
       id: 3,
       content: <CorporateStationery />,
       className: "col-span-1  md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/free-vector/red-professional-business-branding-stationery-set_1017-15303.jpg?t=st=1714373297~exp=1714376897~hmac=46752658b8536cd77611c7ffbc8710a2514b64b373f6355db9262a35da0cec98&w=1060",
+      thumbnail: coprate,
     },
     {
       id: 4,
       content: <CoffeeTableBooks />,
       className: "md:col-span-1  md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/free-photo/top-view-picture-frame-coffee-cup-eyeglasses-pen-notebook-textured-background_23-2147909934.jpg?t=st=1714373439~exp=1714377039~hmac=447bd04e6726fa4f11e62c7645d76ec3c9158d668b2e89a5a32bfa5d5dd9426d&w=1380",
+      thumbnail: table,
     },
     {
       id: 5,
       content: <WeddingInvitations />,
       className: "col-span-1  md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/free-photo/wedding-invitation-flowers-arrangement_23-2150279546.jpg?t=st=1714373492~exp=1714377092~hmac=7f1327b6379d43462dd2eadafb62d7475feb993270d55e67590a5e921bf22474&w=740",
+      thumbnail: Invitations,
     },
     {
       id: 6,
       content: <PackagingBoxes />,
       className: "col-span-1  md:row-span-2",
-      thumbnail:
-        "https://img.freepik.com/premium-psd/view-cardboard-packaging-box-mock-up_23-2150097200.jpg?w=740",
+      thumbnail: box,
     },
     {
       id: 7,
       content: <CorporateGifts />,
       className: "md:col-span-1  md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/premium-psd/school-backpack-clothing-mockup_23-2151223399.jpg?w=826",
+      thumbnail: Merchandise,
     },
     {
       id: 8,
       content: <PersonalizedStationery />,
       className: "col-span-1  md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/free-psd/business-stationery-mock-up_1389-69.jpg?t=st=1714373625~exp=1714377225~hmac=24796bb3c2303d3523ec92dd67bd9d2344e27d2a5cc813a6876e2d36adaba71a&w=1380",
+      thumbnail: PromotionalMerchandise,
     },
     {
       id: 9,
       content: <LaptopBags />,
       className: "col-span-1  md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/premium-photo/black-rolling-backpack-bag-isolated-white-background-with-copy-space-advertisement_847439-95464.jpg?w=1380",
+      thumbnail: Bag,
     },
     {
       id: 10,
       content: <GymBags />,
       className: "md:col-span-1  md:row-span-3",
-      thumbnail:
-        "https://img.freepik.com/free-psd/bag-mockup-merchandising_15879-592.jpg?t=st=1714373701~exp=1714377301~hmac=88811305d1e86198110dc4497704ccff6ccedb35a63d2dff05f5175cf09473ca&w=1060",
+      thumbnail: GymBag,
     },
     {
       id: 11,
       content: <CurryBags />,
-      className: "col-span-1  md:row-span-3",
-      thumbnail: "https://cdn.shopify.com/s/files/1/0558/6413/1764/files/25_8d975002-1285-4f97-b471-78a248c202df.jpg?v=1624432096",
+      className: "col-span-1  md:row-span-6",
+      thumbnail:
+        "https://cdn.shopify.com/s/files/1/0558/6413/1764/files/25_8d975002-1285-4f97-b471-78a248c202df.jpg?v=1624432096",
     },
-   
+
     {
       id: 12,
       content: <NotepadsDiaries />,
       className: "md:col-span-1  md:row-span-4",
-      thumbnail: "https://img.freepik.com/free-vector/blank-white-open-realistic-paper-notebooks-set_1284-13520.jpg?t=st=1717846456~exp=1717850056~hmac=f4fd0bfdce56574c66672dc9d3e5fbfbc8056745558b7bf9f3ed730df03e922c&w=740",
+      thumbnail: diary,
     },
     {
       id: 13,
-      content: <CorporateGifts />,
-      className: "col-span-1 row-span-1  md:row-span-4",
-      thumbnail: "https://img.freepik.com/free-photo/credit-card-shopping-bags_23-2147949877.jpg?t=st=1714379495~exp=1714383095~hmac=bb00f13cdef9162b17f8dd97c50fa6c4e0444c96162dfcb2f7ddf1b17efac163&w=1380",
+      content: <PassportHolders />,
+      className: "col-span-1  md:row-span-4",
+      thumbnail: Cover,
     },
     {
       id: 14,
-      content: <PassportHolders />,
-      className: "col-span-1  md:row-span-3",
-      thumbnail: "https://img.freepik.com/premium-psd/passport-holders-mockup_1332-3582.jpg?w=1380",
-    },
-    {
-      id: 15,
       content: <CataloguesBookletsBrochures />,
       className: "md:col-span-1  md:row-span-3",
       thumbnail:
@@ -274,11 +271,11 @@ function NotepadsDiaries() {
 function PassportHolders() {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Passport Holders</p>
+      <p className="font-bold text-4xl text-white">Card Holders</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Travel in style with durable and sleek passport holders designed to
-        protect your travel documents.
+        Travel in style with durable and sleek card holders designed to protect
+        your cards.
       </p>
     </div>
   );

@@ -5,7 +5,7 @@ import OurClients from "../components/OurClients";
 import Testimonials from "../components/Home/Testimonials";
 import SectionHeader from "../components/common/SectionHeader";
 import SocialProof from "../components/common/SocialProof";
-import owner from ".././assets/Owner.jpg"
+import owner from ".././assets/Owner.jpg";
 
 // const Teams = [
 //   {
@@ -41,10 +41,9 @@ const About = () => {
         }
       />
       <AboutUs />
-      <SocialProof  />
+      <SocialProof />
       <WhyUs />
       <div className=" flex flex-col-reverse md:flex-row justify-center items-center w-11/12 mx-auto gap-20">
-        {/* left */}
         <div
           className="md:w-6/12 "
           data-aos="fade-right"
@@ -67,7 +66,6 @@ const About = () => {
           </p>
           <h5>Paramveer - Founder of Koncept India</h5>
         </div>
-        {/* Right */}
         <div
           className="md:w-5/12"
           data-aos="fade-left"
@@ -76,14 +74,13 @@ const About = () => {
         >
           <img
             className="rounded-t-full"
-            // src="https://plus.unsplash.com/premium_photo-1682430259342-427ec43ebc38?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             src={owner}
             alt="owner profile"
             loading="lazy"
           />
         </div>
       </div>
-      <OurClients  text="Our Clients" customCLass="my-28"/>
+      <OurClients text="Our Clients" customCLass="my-28" />
       {/* <div className="w-10/12 mx-auto">
         <h2 className="text-center my-10 text-3xl font-semibold md:font-bold  md:text-[3vw] ">
           Creative Production Team

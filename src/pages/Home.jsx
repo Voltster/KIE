@@ -19,11 +19,11 @@ const Home = () => {
           className="w-11/12 md:w-4/12"
           data-aos="fade-up"
           data-aos-offset="100"
-          data-aos-delay="50"
+          data-aos-delay="20"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
           data-aos-anchor-placement="top-center"
         >
           <h1 className="bg-gradient-to-l from-blue-500 to-blue-800 bg-clip-text text-transparent">
@@ -46,16 +46,16 @@ const Home = () => {
         </div>
         <div className="md:w-6/12 ">
           <img
-          className="mix-blend-screen"
+            className="mix-blend-screen"
             src={heroImg}
-            alt="Every Print" 
+            alt="Every Print"
             data-aos="fade-up"
-            data-aos-offset="50"
+            data-aos-offset="20"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
+            data-aos-once="true"
             data-aos-anchor-placement="top-center"
           />
         </div>

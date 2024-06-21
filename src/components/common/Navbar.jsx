@@ -60,7 +60,6 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/service"
-                    c
                     className={({ isActive }) =>
                       ` hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md  font-medium ${
                         isActive ? "text-blue-500" : "text-gray-700"
@@ -73,7 +72,6 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/gallery"
-                    c
                     className={({ isActive }) =>
                       ` hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md  font-medium ${
                         isActive ? "text-blue-500" : "text-gray-700"
@@ -86,7 +84,6 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/contact"
-                    c
                     className={({ isActive }) =>
                       ` hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md  font-medium ${
                         isActive ? "text-blue-500" : "text-gray-700"
@@ -146,13 +143,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden`} >
+      <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
         <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <li>
             <NavLink
               to="/"
               onClick={handleNavLinkClick}
-              className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" 
+              className="text-gray-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
             </NavLink>

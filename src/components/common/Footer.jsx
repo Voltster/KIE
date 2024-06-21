@@ -3,6 +3,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <>
       <footer className="bg-blue-700">
@@ -93,11 +95,11 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+            <div className="grid grid-cols-2 gap-8 text-center lg:grid-cols-3 lg:text-left">
               <div>
                 <strong className="font-medium text-gray-50"> Services </strong>
 
-                <ul className="mt-6 space-y-1">
+                <ul className="mt-6 space-y-1 ">
                   <li className="text-gray-100 transition hover:text-gray-100/75">
                     <Link to={"/service"}>Screen Printing</Link>
                   </li>
@@ -145,10 +147,7 @@ const Footer = () => {
                   <li className="text-gray-100 transition hover:text-gray-100/75">
                     <Link to="tel:+91 88603 31991">+91 88603 31991</Link>
                   </li>
-                  <li
-                    className="text-gray-100 transition hover:text-gray-100/75"
-                    email
-                  >
+                  <li className="text-gray-100 transition hover:text-gray-100/75">
                     <Link to="mailto:konceptindia.enterprises@gmail.com">
                       Konceptindia.enterprises@gmail.com
                     </Link>
@@ -160,15 +159,7 @@ const Footer = () => {
 
           <div className="mt-16 border-t border-gray-100 pt-8">
             <p className="text-center text-xs/relaxed text-gray-100">
-              © Koncept India Enterprises 2024. All rights reserved.
-              <br />
-              Created by
-              <Link
-                to={"www.linkedin.com/in/rohit-mishra954"} target="blank"
-                className="text-gray-100  transition hover:text-gray-100/75 ml-1"
-              >
-                Rohit
-              </Link>
+              © Koncept India Enterprises {year}. All rights reserved.
             </p>
           </div>
         </div>

@@ -68,7 +68,10 @@ const ServiceDetails = () => {
             </h2>
             <p className="text-gray-700 mb-8 ">{service.details}</p>
           </div>
-          <div className="flex flex-col md:flex-col md:w-1/3 gap-2" data-aos="zoom-in-up">
+          <div
+            className="flex flex-col md:flex-col md:w-1/3 gap-2"
+            data-aos="zoom-in-up"
+          >
             <h3 className="no-underline text-gray-700">Available Hours*</h3>
             <p className="flex justify-between py-4 ">
               Monday - Friday{" "}
@@ -94,7 +97,6 @@ const ServiceDetails = () => {
           ))}
         </div>
       </div>
-      <SpecialOffer />
 
       <h2 className=" mx-auto text-center my-10 md:mt-20 md:py-24 w-11/12 md:font-bold font-light">
         One Stop Shop for All Your Printing Needs, Let Us Help You Today!
