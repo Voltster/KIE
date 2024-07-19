@@ -168,7 +168,7 @@ const WhyUs = () => {
     <div className="py-[2vw]">
       <h3 className="text-center">Why Us</h3>
       <h2 className="text-center w-11/12 md:w-6/12 mx-auto my-4">
-        Fast, Cheap and High-Quality Digital Prints, Why Not?
+        Fast, Reasonable and High-Quality Digital Prints, Why Not?
       </h2>
 
       <div className="px-3 md:lg:xl:px-40 py-20 bg-opacity-10">

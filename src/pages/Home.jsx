@@ -1,5 +1,6 @@
 import React from "react";
-import heroImg from "../assets/heroImg.png";
+// import heroImg from "../assets/heroImg.png";
+import heroImg from "../assets/hero-img.jpg";
 import OurClients from "../components/OurClients";
 import AboutUs from "../components/AboutUs";
 import WhyUs from "../components/about/WhyUs";
@@ -44,20 +45,20 @@ const Home = () => {
             </Link>
           </button>
         </div>
-        <div className="md:w-6/12 ">
+        <div className="md:w-6/12 mt-10 relative ">
           <img
-            className="mix-blend-screen"
+            className=" bg-red-300 mb-8   rounded-tl-[10rem]  md:absolute md:-right-[3rem] md:-bottom-[15rem]"
             src={heroImg}
             alt="Every Print"
             data-aos="fade-up"
-            data-aos-offset="20"
-            data-aos-delay="50"
+            data-aos-offset="100"
+            data-aos-delay="20"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
-            width="800"
+            width="600"
           />
         </div>
       </div>
