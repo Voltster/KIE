@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery.jsx";
 import Contact from "./pages/Contact.jsx";
 import ServiceDetails from "./components/services/ServiceDetails.jsx";
 import PageNotFound from "./components/common/PageNotFound.jsx";
+import Careers from "./pages/Careers.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "service/:id", element: <ServiceDetails /> },
       { path: "gallery", element: <Gallery /> },
       { path: "contact", element: <Contact /> },
+      { path: "careers", element: <Careers /> },
       { path: "*", element: <PageNotFound /> },
     ],
   },

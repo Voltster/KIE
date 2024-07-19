@@ -6,10 +6,10 @@ const Map = () => {
   return (
     <div className="w-full pt-20  pb-2" data-aos="zoom-in-down">
       <h3 className="text-center no-underline mt-5 mb-10">Map</h3>
-      <div className=" md:w-11/12 mx-auto border border-blue-500">
+      <div className=" md:w-11/12 mx-auto  ">
         <iframe
           src={mapUrl}
-          className="w-full h-[50vw] md:h-[30vw]  rounded-md "
+          className="w-full h-[50vw] md:h-[30vw]  rounded-lg"
           style={{ border: 0 }}
           loading="lazy"
           referrerPolicy="no-referrer"

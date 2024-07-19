@@ -83,7 +83,7 @@ const ContactForm = () => {
                     id="first_name"
                     placeholder="John"
                     required
-                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-100 rounded-md focus:outline-none focus:border-blue-300"
                   />
                 </div>
                 <div className="w-full md:w-1/2">
@@ -99,7 +99,7 @@ const ContactForm = () => {
                     id="last_name"
                     placeholder="Doe"
                     required
-                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-100 rounded-md focus:outline-none focus:border-blue-300"
                   />
                 </div>
               </div>
@@ -118,7 +118,7 @@ const ContactForm = () => {
                     id="email"
                     placeholder="you@company.com"
                     required
-                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-100 rounded-md focus:outline-none focus:border-blue-300"
                   />
                 </div>
                 <div className="w-full md:w-1/2">
@@ -134,7 +134,7 @@ const ContactForm = () => {
                     id="phone"
                     placeholder="+91 1234567890"
                     required
-                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300 "
+                    className="w-full px-3 py-2 placeholder-gray-300 border border-gray-100 rounded-md focus:outline-none focus:border-blue-300 "
                   />
                 </div>
               </div>
@@ -151,7 +151,7 @@ const ContactForm = () => {
                   name="message"
                   id="message"
                   placeholder="Your Message"
-                  className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:border-blue-300"
+                  className="w-full px-3 py-2 placeholder-gray-300 border border-gray-100 rounded-md focus:outline-none focus:border-blue-300"
                   required
                 ></textarea>
               </div>
